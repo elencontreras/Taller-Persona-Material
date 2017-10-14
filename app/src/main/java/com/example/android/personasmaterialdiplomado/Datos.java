@@ -27,5 +27,20 @@ public class Datos {
         return false;
 
     }
+
+    public static int buscar (String cedula){
+
+        for (int i = 0; i < personas.size(); i++) {
+            if (personas.get(i).getCedula().equals(personas.get(i).getCedula())){
+              return i;
+            }
+
+        }
+        return -1;
+    }
+
+
+
+
 }
 

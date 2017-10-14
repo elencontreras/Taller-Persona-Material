@@ -64,6 +64,7 @@ public class Principal extends AppCompatActivity implements  AdaptadorPersona.On
         b.putInt("sexo",p.getSexo());
         b.putInt("foto",p.getFoto());
 
+
         i.putExtra("datos",b);
         startActivity(i);
     }

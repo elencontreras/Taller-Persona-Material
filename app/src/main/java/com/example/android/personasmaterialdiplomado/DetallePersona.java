@@ -92,9 +92,14 @@ public class DetallePersona extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
 
-
-
     }
+
+    public void modificar(View v){
+        Intent i = new Intent(DetallePersona.this, ModificarPersona.class);
+        startActivity(i);
+    }
+
+
     public void onBackPressed(){
         finish();
         Intent i = new Intent(DetallePersona.this,Principal.class);
